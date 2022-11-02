@@ -5,6 +5,7 @@ import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import './index.css'
 import App from './App'
+import EIP712 from './eip-712'
 import EIP3326 from './eip-3326'
 import EIP3085 from './eip-3085'
 import reportWebVitals from './reportWebVitals'
@@ -16,6 +17,7 @@ ReactDOM.render(
     <HashRouter>
       <Routes>
         <Route path="/" element={<App />} />
+        <Route path="eip-712" element={<EIP712 />} />
         <Route path="eip-3326" element={<EIP3326 />} />
         <Route path="eip-3085" element={<EIP3085 />} />
       </Routes>
